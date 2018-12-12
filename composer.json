@@ -1,0 +1,21 @@
+{
+    "name": "danmurf/recamann-sequence",
+    "description": "Generate numbers in the Recamán sequence.",
+    "type": "library",
+    "require-dev": {
+        "phpspec/phpspec": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "danmurf\\RecamánSequence\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Murfitt",
+            "email": "dan@murfitt.net"
+        }
+    ],
+    "require": {}
+}
