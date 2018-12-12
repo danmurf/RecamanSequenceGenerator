@@ -11,4 +11,9 @@ class RecamanSequenceGeneratorSpec extends ObjectBehavior
     {
         $this->shouldHaveType(RecamanSequenceGenerator::class);
     }
+
+    public function it_returns_a_generator_when_invoked()
+    {
+        $this->__invoke()->shouldReturnAnInstanceOf(\Generator::class);
+    }
 }
