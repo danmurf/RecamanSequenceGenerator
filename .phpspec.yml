@@ -1,4 +1,4 @@
 suites:
     dependency_injection_suite:
-        namespace: danmurf\RecamánSequence
-        psr4_prefix: danmurf\RecamánSequence
+        namespace: danmurf\RecamanSequence
+        psr4_prefix: danmurf\RecamanSequence

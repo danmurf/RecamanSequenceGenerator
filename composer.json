@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "danmurf\\RecamánSequence\\": "src/"
+            "danmurf\\RecamanSequence\\": "src/"
         }
     },
     "license": "MIT",
