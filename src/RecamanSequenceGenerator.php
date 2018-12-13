@@ -2,6 +2,8 @@
 
 namespace danmurf\RecamanSequence;
 
+use in_array;
+
 class RecamanSequenceGenerator
 {
     /** @var int */
@@ -17,19 +19,21 @@ class RecamanSequenceGenerator
     {
         do {
             $backwardNumber = $this->position - $this->hops;
-            if ($backwardNumber >= 0 && !\in_array($backwardNumber, $this->numbersYielded)) {
+            if ($backwardNumber >= 0 && !in_array($backwardNumber, $this->numbersYielded)) {
                 yield $backwardNumber;
-                $this->numbersYielded[] = $backwardNumber;
-                ++$this->hops;
-                $this->position = $backwardNumber;
+                $this->registerPosition($backwardNumber);
             } else {
                 $forwardNumber = $this->position + $this->hops;
                 yield $forwardNumber;
-                $this->numbersYielded[] = $forwardNumber;
-
-                ++$this->hops;
-                $this->position = $forwardNumber;
+                $this->registerPosition($forwardNumber);
             }
         } while (true);
+    }
+
+    private function registerPosition(int $position): void
+    {
+        $this->position = $position;
+        $this->numbersYielded[] = $position;
+        ++$this->hops;
     }
 }
