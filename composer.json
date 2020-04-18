@@ -3,7 +3,7 @@
     "description": "Generate numbers in the Recamán sequence.",
     "type": "library",
     "require-dev": {
-        "phpspec/phpspec": "^5.1"
+        "phpspec/phpspec": "^5.1 || ^6.0"
     },
     "autoload": {
         "psr-4": {
