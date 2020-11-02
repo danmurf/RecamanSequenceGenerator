@@ -9,5 +9,3 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
   - danmurf
-- name: Dependabot Auto Merge
-  uses: ahmadnassri/action-dependabot-auto-merge@v2.2.0
